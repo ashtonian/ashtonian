@@ -1,2 +1,3 @@
 - [charmap](https://github.com/ashtonian/charmap): replace `<::KEY::>` tokens in files with explicitly named values, all or nothing, for GitOps render paths
 - [argo-fleet](https://github.com/ashtonian/argo-fleet): Argo CD ApplicationSet patterns for fleet-scale, multi-cluster GitOps
+- [mqttv5](https://github.com/ashtonian/mqttv5): MQTT v5 client for Go, with reconnect and session resume built in, QoS 1/2 that survives restarts, and multi-broker failover and fan-out
