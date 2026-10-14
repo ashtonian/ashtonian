@@ -2,3 +2,4 @@
 - [argo-fleet](https://github.com/ashtonian/argo-fleet): Argo CD ApplicationSet patterns for fleet-scale, multi-cluster GitOps
 - [mqttv5](https://github.com/ashtonian/mqttv5): low-overhead MQTT v5 client for Go (allocation-free PUBLISH decoding), with reconnect and session resume built in, QoS 1/2 that survives restarts, and multi-broker failover and fan-out
 - [technitium-configurator](https://github.com/ashtonian/technitium-configurator): declarative YAML for Technitium DNS Server: settings, zones, records, apps, users and clusters applied idempotently, so a fresh server bootstraps and re-runs change nothing; exports a running server back to YAML
+- [gitten](https://github.com/ashtonian/gitten): every git repo you work on, cloned, in sync and backed up across GitHub, GitLab and Gitea/Forgejo, several accounts and machines; one-command setup, a background sync, backups that never touch your working tree, and workspaces for coding agents
