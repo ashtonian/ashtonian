@@ -1,15 +1,28 @@
-### Go libraries
+# Ashton Kinslow
 
-- [pkg](https://github.com/ashtonian/pkg): batteries and glue code for Go services, each package an independent module with its own releases
-  - [config](https://github.com/ashtonian/pkg/tree/main/config): typed configuration on koanf: defaults, files, environment and flags validated in one pipeline, hot reload that publishes only a config that passed, and output that never prints a secret
-- [mqttv5](https://github.com/ashtonian/mqttv5): low-overhead MQTT v5 client for Go (allocation-free PUBLISH decoding), with reconnect and session resume built in, QoS 1/2 that survives restarts, and multi-broker failover and fan-out
+I build Go libraries, infrastructure automation and developer tools.
 
-### GitOps and infrastructure
+My focus is network protocols and the operational details around them:
+reconnects, retries, configuration changes and repeatable deployments. I value
+composable APIs, explicit failure behavior and examples you can run.
 
-- [argo-fleet](https://github.com/ashtonian/argo-fleet): Argo CD ApplicationSet patterns for fleet-scale, multi-cluster GitOps
-- [charmap](https://github.com/ashtonian/charmap): replace `<::KEY::>` tokens in files with explicitly named values, all or nothing, for GitOps render paths
-- [technitium-configurator](https://github.com/ashtonian/technitium-configurator): declarative YAML for Technitium DNS Server: settings, zones, records, apps, users and clusters applied idempotently, so a fresh server bootstraps and re-runs change nothing; exports a running server back to YAML
+## Go libraries
 
-### Developer tools
+| Project | When to use it |
+|---|---|
+| [mqttv5](https://github.com/ashtonian/mqttv5) | MQTT v5 clients with built-in reconnects and session resumption, typed payloads, and multi-broker failover or parallel connections. Optional persistence supports recovery across restarts. |
+| [httpx](https://github.com/ashtonian/pkg/tree/main/httpx) | Add retries/backoff, circuit breakers, ETag caching, compression and rate/concurrency limits to an ordinary `http.Client` using composable `http.RoundTripper` layers. |
+| [config](https://github.com/ashtonian/pkg/tree/main/config) | Load typed configuration from defaults, files, environment and flags, with validation, hot reload and redacted inspection. Built on koanf. |
 
-- [gitten](https://github.com/ashtonian/gitten): find, clone and keep in sync every repo you work on across GitHub, GitLab and Gitea/Forgejo, then launch coding agents on them side by side
+`httpx` and `config` live in [pkg](https://github.com/ashtonian/pkg), where
+each module has its own dependencies, versions and releases. Their READMEs
+link to quick starts, detailed guides and API references.
+
+## Tools and infrastructure
+
+| Project | When to use it |
+|---|---|
+| [gitten](https://github.com/ashtonian/gitten) | Find, clone and sync repos across GitHub, GitLab and Gitea/Forgejo; manage account identities, back up uncommitted work and launch coding agents in separate workspaces. |
+| [technitium-configurator](https://github.com/ashtonian/technitium-configurator) | Configure Technitium DNS Server from YAML or export a running server's configuration. Run from a shell, CI, Docker Compose or a Kubernetes Job. |
+| [argo-fleet](https://github.com/ashtonian/argo-fleet) | Compare and run Argo CD ApplicationSet patterns for Kubernetes fleets: shared applications, group overrides and addons on selected clusters. |
+| [charmap](https://github.com/ashtonian/charmap) | Substitute explicitly supplied values into files or stdin before rendering manifests; reject missing values and malformed tokens. |
