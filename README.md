@@ -1,11 +1,3 @@
-# Ashton Kinslow
-
-I build Go libraries, infrastructure automation and developer tools.
-
-My focus is network protocols and the operational details around them:
-reconnects, retries, configuration changes and repeatable deployments. I value
-composable APIs, explicit failure behavior and examples you can run.
-
 ## Go libraries
 
 | Project | When to use it |
