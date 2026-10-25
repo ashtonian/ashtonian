@@ -13,7 +13,7 @@
 
 | Project | What it does |
 |---|---|
-| [gitten](https://github.com/ashtonian/gitten) | Find, clone and sync repos across GitHub, GitLab and Gitea/Forgejo, with per-account identities and separate workspaces for coding agents. |
+| [gitstead](https://github.com/ashtonian/gitstead) | Find, clone and sync repos across GitHub, GitLab and Gitea/Forgejo, with per-account identities and separate workspaces for coding agents. |
 | [technitium-configurator](https://github.com/ashtonian/technitium-configurator) | Configure Technitium DNS Server from YAML, or export a running server's configuration. Runs from a shell, CI, Docker or a Kubernetes Job. |
 | [argo-fleet](https://github.com/ashtonian/argo-fleet) | Argo CD ApplicationSet patterns for Kubernetes fleets: shared applications, group overrides, per-cluster addons. |
 
